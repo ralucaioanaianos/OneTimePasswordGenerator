@@ -120,6 +120,11 @@ const LoginForm = () => {
 
     return (
         <div className="login-container">
+            <img
+                src="/icons8-key-120.png"
+                alt="Cat Icon"
+                style={{ width: "100px", height: "100px", marginBottom: "20px" }}
+            />
             <h1 className="login-title">Welcome to the most secure bank!</h1>
             <p className="login-subtitle">Please login to your account</p>
             <div>
@@ -131,10 +136,6 @@ const LoginForm = () => {
                 />
             </div>
 
-            {isTyping && !validateEmail(email) && (
-                <p className="error-message">Please enter a valid email address.</p>
-            )}
-
             {countdown > 0 && (
                 <p className="countdown">Time remaining: {formatTime(countdown)}</p>
             )}
@@ -143,7 +144,7 @@ const LoginForm = () => {
                 onClick={handleGetOtpViaEmail}
                 disabled={!validateEmail(email) || isEmailButtonDisabled || countdown > 0}
                 style={{
-                    backgroundColor: !validateEmail(email) || isEmailButtonDisabled || countdown > 0 ? "#cccccc" : "#6a1b9a",
+                    backgroundColor: !validateEmail(email) || isEmailButtonDisabled || countdown > 0 ? "#c8d8e4" : "#2b6777",
                     cursor: !validateEmail(email) || isEmailButtonDisabled || countdown > 0 ? "not-allowed" : "pointer",
                 }}
             >
@@ -153,7 +154,7 @@ const LoginForm = () => {
                 onClick={handleGetOtpAsToast}
                 disabled={!validateEmail(email) || isToastButtonDisabled || countdown > 0}
                 style={{
-                    backgroundColor: !validateEmail(email) || isToastButtonDisabled || countdown > 0 ? "#cccccc" : "#6a1b9a",
+                    backgroundColor: !validateEmail(email) || isToastButtonDisabled || countdown > 0 ? "#c8d8e4" : "#2b6777",
                     cursor: !validateEmail(email) || isToastButtonDisabled || countdown > 0 ? "not-allowed" : "pointer",
                 }}
             >

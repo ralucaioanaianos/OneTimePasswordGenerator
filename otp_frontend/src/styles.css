@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
 }
 
 .login-container {
@@ -18,12 +18,12 @@ body {
 .login-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333333;
+    color: #2b6777;
     margin-bottom: 10px;
 }
 
 .countdown {
-    color: #6a1b9a;
+    color: #2b6777;
     font-size: 1rem;
     margin-top: 10px;
     font-weight: bold;
@@ -55,7 +55,7 @@ button {
     margin: 10px 10px;
     border: none;
     border-radius: 5px;
-    background-color: #6a1b9a;
+    background-color: #2b6777;
     color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: #9c27b0;
+    background-color: #c8d8e4;
 }
 
 .error-message {
