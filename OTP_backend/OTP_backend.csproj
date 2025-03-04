@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="TestOTP_backend\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="TestOTP_backend\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="TestOTP_backend\obj\TestOTP_backend.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+
+</Project>

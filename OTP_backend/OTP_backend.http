@@ -1,0 +1,6 @@
+@OTP_backend_HostAddress = http://localhost:5095
+
+GET {{OTP_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
